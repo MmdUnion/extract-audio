@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+
+{% block title %}
+<title>{% trans 'About us - Extract Audio' %}</title>
+<meta name="og:title" property="og:title" content="{% trans 'About us - Extract Audio' %}">
+{% endblock title %}
+
+{% block description %}
+<meta name="og:description" property="og:description" content="{% trans 'extract-audio tool helps you to get your audio file from video file online anywhere without any special tools. This tool is and will be completely free.' %}">
+<meta name="description" content="{% trans 'extract-audio tool helps you to get your audio file from video file online anywhere without any special tools. This tool is and will be completely free.' %}">
+
+{% endblock description %}
+
+{% block active_about_us %}class="active"{% endblock active_about_us %}
+
+{% block content %}
+
+<!-- ***** Welcome Area Start ***** -->
+<div class="welcome-area" id="welcome">
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12 mt-3">
+                        <div class="card-body">
+						    <h1><strong class="card-title text-headers">{% trans 'About Us' %}</strong></h1>
+                            <p class="card-text">{% trans 'extract-audio tool helps you to get your audio file from video file online anywhere without any special tools. This tool is and will be completely free.' %}</p>
+                            <a href="{% url 'home:home_view' %}" class="btn btn-primary">{% trans 'Go Home Page' %}</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include './main_content.html' %}
+
+{% endblock content %}
+

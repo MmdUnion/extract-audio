@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+<title>{% trans 'Contact us - Extract Audio' %}</title>
+<meta name="og:title" property="og:title" content="{% trans 'Contact us - Extract Audio' %}">
+{% endblock title %}
+
+{% block description %}
+<meta name="og:description" property="og:description" content="{% trans 'We are happy to hear your messages. Email Us: Support@Extract-Audio.com' %}">
+<meta name="description" content="{% trans 'We are happy to hear your messages. Email Us: Support@Extract-Audio.com' %}">
+
+{% endblock description %}
+
+{% block active_contact_us %}class="active"{% endblock active_contact_us %}
+{% block content %}
+
+<!-- ***** Welcome Area Start ***** -->
+<div class="welcome-area" id="welcome">
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12 mt-3">
+                    <h1><strong class="text-headers">Contact Us</strong></h1>
+                    <a href="mailto:support@extract-audio.com" target="_blank" class="btn btn-primary">Email Us: Support@Extract-Audio.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include './main_content.html' %}
+
+{% endblock content %}
+

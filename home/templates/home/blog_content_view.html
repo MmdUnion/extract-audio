@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+<title>{{content.title}} - Extract Audio</title>
+<meta name="og:title" property="og:title" content="{{content.title}} - Extract Audio">
+{% endblock title %}
+
+{% block description %}
+<meta name="og:description" property="og:description" content="">
+<meta name="description" content="{{content.text|striptags|safe|truncatewords:120}}">
+
+{% endblock description %}
+
+{% block active_blog %}class="active"{% endblock active_blog %}
+
+{% block content %}
+
+<!-- ***** Welcome Area Start ***** -->
+<div class="welcome-area" id="welcome">
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12 mt-3">
+                    <h1><strong class="text-headers">{{content.title}}</strong></h1>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="testimonials text-center bg-light features-icons" id="downloaded-items">
+    <div class="container">
+            
+        <p class="mt-5">{{content.text|safe}}</p>
+
+
+        <hr ></hr>
+
+        <i class="text-left">Date of content: {{content.created_at}}</i>
+        <hr ></hr>
+
+    </div>
+
+    <nav aria-label="..." >
+        <h3 class="mt-5">Other articles</h3>
+        <div class="row mx-auto justify-content-center" id="items">
+            {% for any_item in content_data %}
+                <div class="col d-flex justify-content-center rounded mt-3 mb-3">
+                    <a href="{% url 'home:blog_content_view' post_id=any_item.id post_name=any_item.slug %}">
+                        <div class="card" style="width: 18rem;height: 18rem;">
+                            <img class="card-img-top" src="{{any_item.picture_load.url}}" alt="{{any_item.title}}">
+                            <h5 class="card-title mt-3">{{any_item.title}}</h5>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+        </div>
+      </nav>
+</section>
+
+
+{% endblock content %}
+

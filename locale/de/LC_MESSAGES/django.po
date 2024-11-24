@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-19 02:07+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+#: .\home\templates\home\about_us_view.html:8
+#: .\home\templates\home\about_us_view.html:9
+msgid "About us - Extract Audio"
+msgstr "Über uns - Extract Audio"
+
+#: .\home\templates\home\about_us_view.html:13
+#: .\home\templates\home\about_us_view.html:14
+#: .\home\templates\home\about_us_view.html:31
+msgid ""
+"extract-audio tool helps you to get your audio file from video file online "
+"anywhere without any special tools. This tool is and will be completely free."
+msgstr "Mit dem Extract-Audio-Tool können Sie Ihre Audiodatei aus einer Videodatei überall online ohne spezielle Tools abrufen. Dieses Tool ist und bleibt völlig kostenlos."
+
+#: .\home\templates\home\about_us_view.html:30
+msgid "About Us"
+msgstr "Über uns"
+
+#: .\home\templates\home\about_us_view.html:32
+msgid "Go Home Page"
+msgstr "Gehen Sie zur Startseite"
+
+#: .\home\templates\home\blog_view.html:7
+#: .\home\templates\home\blog_view.html:8
+msgid "Blog - Extract Audio"
+msgstr "Bloggen - Extract Audio"
+
+#: .\home\templates\home\blog_view.html:28
+msgid "Blog"
+msgstr "Bloggen"
+
+#: .\home\templates\home\contact_us_view.html:5
+#: .\home\templates\home\contact_us_view.html:6
+msgid "Contact us - Extract Audio"
+msgstr "kontaktiere uns - Extract Audio"
+
+#: .\home\templates\home\contact_us_view.html:10
+#: .\home\templates\home\contact_us_view.html:11
+msgid "We are happy to hear your messages. Email Us: Support@Extract-Audio.com"
+msgstr "Wir freuen uns auf Ihre Nachrichten. Schreiben Sie uns eine eMail: Support@Extract-Audio.com"
+
+#: .\home\templates\home\home_view.html:6
+#: .\home\templates\home\home_view.html:7
+msgid "Extract Audio From Video Online - Extract Audio"
+msgstr "Audio aus Video online extrahieren - Extract Audio"
+
+#: .\home\templates\home\home_view.html:13
+msgid ""
+"Extract audio from any video file online. Support for any format: webm, mkv, "
+"flv, vob, ogv, ogg, webm, drc, gif, gifv, mng, avi, mts, m2ts, ts, mov, qt, "
+"wmv, yuv, rm, rmvb, viv, asf, amv, mp4, m4p, mpg, mp2, mpeg, mpe, mpv, mpg, "
+"mpeg, m2v, m4v, svi, 3gp, 3g2, mxf, roq, nsv, f4p, f4v, f4a, f4b"
+msgstr "Extrahieren Sie Audio aus jeder Videodatei online. Unterstützung für jedes Format: webm, mkv, flv, vob, ogv, ogg, webm, drc, gif, gifv, mng, avi, mts, m2ts, ts, mov, qt, wmv, yuv, rm, rmvb, viv, asf, amv, mp4, m4p, mpg, mp2, mpeg, mpe, mpv, mpg, mpeg, m2v, m4v, svi, 3gp, 3g2, mxf, roq, nsv, f4p, f4v, f4a, f4b"
+
+#: .\home\templates\home\home_view.html:28
+msgid "Upload video to extract audio"
+msgstr "Laden Sie ein Video hoch, um Audio zu extrahieren"
+
+#: .\home\templates\home\home_view.html:31
+msgid "Choose file"
+msgstr "Datei wählen"
+
+#: .\home\templates\home\home_view.html:38
+msgid "Click to upload"
+msgstr "Zum Hochladen klicken"
+
+#: .\home\templates\home\main_content.html:18
+msgid "Very high speed and support for all types of extensions"
+msgstr "Sehr hohe Geschwindigkeit und Unterstützung für alle Arten von Erweiterungen"
+
+#: .\home\templates\home\main_content.html:21
+msgid ""
+"Get the audio of your video file easily and with just one click with the "
+"extract-audio tool. Every video file is supported with any extension, such "
+"as: webm, mkv, flv, vob, ogv, ogg, webm, drc, gif, gifv, mng, avi, mts, "
+"m2ts, ts, mov, qt, wmv, yuv, rm, rmvb, viv, asf, amv, mp4, m4p, mpg, mp2, "
+"mpeg, mpe, mpv, mpg, mpeg, m2v, m4v, svi, 3gp, 3g2, mxf, roq, nsv, f4p, f4v, "
+"f4a, f4b"
+msgstr "Holen Sie sich das Audio Ihrer Videodatei einfach und mit nur einem Klick mit dem Extract-Audio-Tool. Jede Videodatei wird mit jeder Erweiterung unterstützt, wie zum Beispiel: webm, mkv, flv, vob, ogv, ogg, webm, drc, gif, gifv, mng, avi, mts, m2ts, ts, mov, qt, wmv, yuv, rm, rmvb, viv, asf, amv, mp4, m4p, mpg, mp2, mpeg, mpe, mpv, mpg, mpeg, m2v, m4v, svi, 3gp, 3g2, mxf, roq, nsv, f4p, f4v, f4a, f4b"
+
+#: .\home\templates\home\main_content.html:37
+msgid "Always available..."
+msgstr "Immer verfügbar..."
+
+#: .\home\templates\home\main_content.html:40
+msgid ""
+"Extract your audio files from videos at any time without the need to install "
+"another software and only by using the extract-audio tool."
+msgstr "Extrahieren Sie Ihre Audiodateien jederzeit aus Videos, ohne andere Software zu installieren, und verwenden Sie einfach das Extract-Audio-Tool."

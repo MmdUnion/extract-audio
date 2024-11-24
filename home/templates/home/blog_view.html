@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+<title>{% trans 'Blog - Extract Audio' %}</title>
+<meta name="og:title" property="og:title" content="{% trans 'Blog - Extract Audio' %}">
+{% endblock title %}
+
+{% block description %}
+<meta name="og:description" property="og:description" content="">
+<meta name="description" content="">
+
+{% endblock description %}
+
+{% block active_blog %}class="active"{% endblock active_blog %}
+
+{% block content %}
+
+<!-- ***** Welcome Area Start ***** -->
+<div class="welcome-area" id="welcome">
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12 mt-3">
+                    <h1><strong class="text-headers">{% trans 'Blog' %}</strong></h1>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="testimonials text-center bg-light features-icons" id="downloaded-items">
+    <div class="container">
+        <div class="row mx-auto" id="items">
+            {% for any_item in page_obj %}
+                <div class="col d-flex justify-content-center mt-5 rounded mb-3">
+                    <a href="{% url  'home:blog_content_view' post_id=any_item.id post_name=any_item.slug %}">
+                        <div class="card" style="width: 18rem">
+                            <img class="card-img-top" src="{{any_item.picture_load.url}}" alt="{{any_item.title}}">
+                            <h5 class="card-title mt-3">{{any_item.title}}</h5>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+    <nav aria-label="...">
+        <ul class="pagination justify-content-center mb-3 mt-3">
+            {% if page_obj.has_previous %}
+
+                <li class="page-item">
+                    <a class="page-link" href="?page={{page_obj.previous_page_number}}" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="?page={{page_obj.previous_page_number}}">{{page_obj.previous_page_number}}</a></li>
+
+            {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+            {% endif %}
+
+          <li class="page-item active">
+            <a class="page-link" href="?page={{page_obj.number}}">{{page_obj.number}} <span class="sr-only">(current)</span></a>
+          </li>
+
+
+
+          {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{page_obj.next_page_number}}">Next</a>
+            </li>
+
+            {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+          {% endif %}
+
+
+
+        </ul>
+      </nav>
+</section>
+
+
+{% endblock content %}
+
